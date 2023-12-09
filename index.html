@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Someshwar N - Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            /* background-color: #f8f9fa; */
+            color: #343a40;
+            /* background-image: "https://www.ilovepdf.com/img/ilovepdf/social/en-US/imagepdf.png"; */
+            background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?w=900&t=st=1686817402~exp=1686818002~hmac=85a24047f213c4b6fb727d3b2d4de37430014531e801c8950e9b018ecd1778cf");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        #profile{
+           width: 75%;
+            height: 75%;
+            border-radius: 75%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        img{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out; 
+        }
+        #project
+        {
+           max-width: 100%;
+            height: 275px;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .imgclass
+        {
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            /* background-color: antiquewhite; */
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function downloadResume(){
+             // replace this URL with the URL of your resume PDF file
+      const pdfUrl = './Someshwar Resume.pdf';
+      
+      // create a new anchor element
+      const downloadLink = document.createElement('a');
+      
+      // set the href attribute of the anchor to the URL of your resume PDF file
+      downloadLink.href = pdfUrl;
+      downloadLink.target='_blank';
+      
+      // set the download attribute of the anchor to the filename you want to use for the downloaded file
+      downloadLink.download = 'Someshwar Resume.pdf';
+      
+      // simulate a click on the anchor element to trigger the download
+      downloadLink.click();
+        }
+    </script>
+
+    <header>
+        <h1>Someshwar N</h1>
+        <p class="lead">Web Developer | Designer</p>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="imgclass">
+                        <img src="./someshwar_photo.jpg" alt="Someshwar.N" id="profile" class="img-fluid mb-3">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p class="lead">This is N.Someshwar pursuing Second Year in B.Tech in stream of Information Technology in Chennai Institute Of Technology.From young age, I have been captivated by the wonders of technology and its impact on our daily lives. This fascination led me to choose engineering as my field of study. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="list-group">
+                <li class="list-group-item">HTML5</li>
+                <li class="list-group-item">CSS3</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">Python</li>
+                <li class="list-group-item">Java</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <img src="./projectPhotos/ik_photo.png" alt="Inkart Project" id="project" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Inkart Project</h3>
+                            <p class="card-text">Created an online shopping website with frontend functionality achieved visual appealing using bootstrap
+                                framework and integrated basic JavaScript code for logical flow.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card project-card">
+                        <img src="./projectPhotos/ep_photo.jpg" alt="Entry Counter" id="project" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Entry Counter</h3>
+                            <p class="card-text">When some person or object crosses the IR sensor ,it
+                                will detect that some object is crossing and it send the
+                                message to Arduino board and then Arduino board send
+                                the message to the LCD display.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p class="lead">View my resume <a onclick="downloadResume()" target="_blank">here</a>.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p class="lead">Email: <a href="mailto:somesh3505@gmail.com" target="_blank">somesh3505@gmail.com</a></p>
+            <p class="lead">Phone: 8148234641</p>
+            <p class="lead">LinkedIn: <a href="https://www.linkedin.com/in/somesh-nagaraj-385271257" target="_blank">Someshwar Nagaraj</a></p>
+            <p class="lead">Github: <a href="https://github.com/SOMESH359" target="_blank">SOMESH359</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Someshwar.N All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
